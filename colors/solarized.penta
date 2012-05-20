@@ -1,0 +1,48 @@
+hi clear
+
+
+hi -a Boolean color:  #dc322f ;
+hi -a Function color:  #2aa198 ;
+hi -a Null color:  #268bd2 ;
+hi -a Number color:  #268bd2 ;
+hi -a Object color:  #6c71c4 ;
+hi -a String color:  #859900 ;
+hi -a Comment color:  #93a1a1 ;
+hi -a Enabled color:  #268bd2 ;
+hi -a Disabled color:  #93a1a1 ;
+hi -a FontFixed font-family: Monaco !important;
+hi -a FontCode font-family: Monaco !important;
+hi -a FontProportional font-family: "Liberation Sans" !important;
+hi -a Normal color:  #657b83  !important; background:  #fdf6e3  !important;
+hi -a ErrorMsg color:  #657b83  !important; background:  #dc322f  !important;
+hi -a InfoMsg color:  #839496  !important; background:  #002b36  !important;
+hi -a LineNr color:  #cb4b16  !important; background:  #fdf6e3  !important;
+hi -a ModeMsg color:  #657b83  !important; background:  #fdf6e3  !important;
+hi -a MoreMsg color:  #859900 ;
+hi -a NonText color:  #268bd2 ;
+hi -a Preview color:  #93a1a1 ;
+hi -a Question color:  #859900  !important; background:  #fdf6e3  !important;
+hi -a StatusQuestion color:  #859900  !important;
+hi -a WarningMsg color:  #dc322f  !important; background:  #fdf6e3  !important;
+hi -a StatusWarningMsg color:  #dc322f  !important;
+hi -a CompTitle color:  #d33682 ; background:  #fdf6e3 ;
+hi -a CompTitleSep background:  #d33682 ; background: -moz-linear-gradient(60deg,  #d33682 ,  #fdf6e3 );
+hi -a CompDesc color:  #93a1a1 ;
+hi -a CompItem[selected] background:  #b58900 ; color:  #fdf6e3 ;
+hi -a Indicator color:  #268bd2 ;
+hi -a Keyword color:  #dc322f ;
+hi -a Tag color:  #268bd2 ;
+hi -a Title color:  #d33682 ;
+hi -a URL color:  #859900 ;
+hi -a URLExtra color:  #93a1a1 ;
+hi -a FrameIndicator background-color:  #dc322f ;
+hi -a Bell background-color:  #002b36  !important;
+hi -a StatusLine font-weight: normal;
+hi -a StatusLineNormal color:  #839496  !important; background-color:  #002b36  !important;
+hi -a StatusLineSecure color:  #839496  !important; background: -moz-linear-gradient(0deg,  #002b36  80%,  #268bd2  85%,  #002b36 ) !important;
+hi -a StatusLineBroken color:  #839496  !important; background: -moz-linear-gradient(0deg,  #002b36  80%,  #dc322f  85%,  #002b36 ) !important;
+hi -a StatusLineExtended color:  #839496  !important; background: -moz-linear-gradient(0deg,  #002b36  80%,  #859900  85%,  #002b36 ) !important;
+hi -a BufTabSelected color:  #586e75 ; background-color:  #eee8d5 ;
+hi -a BufTab:hover color:  #eee8d5 ; background-color:  #586e75 ;
+hi -a BufTabAlternate:hover color:  #eee8d5 ; background-color:  #586e75 ;
+hi -a BufTabAlternate color:  #93a1a1 ; background-color:  #073642 ;

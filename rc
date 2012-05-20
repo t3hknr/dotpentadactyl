@@ -1,0 +1,77 @@
+"1.0rc1
+
+loadplugins '\.(js|penta)$'
+group user
+
+"Invert yank
+nmap -builtin y Y
+nmap -builtin Y y
+
+"nmap -builtin h H
+"nmap -builtin H h
+"nmap -builtin l L
+"nmap -builtin L l
+
+"Faster scroll
+map -count -modes=n j -builtin <count>4j
+map -count -modes=n k -builtin <count>4k
+
+"Open gui addons window
+nmap -builtin <Leader>a :dialog addons<CR>
+
+"Toggle private mode
+nmap -builtin <Leader>p :set private!<CR>
+
+"Toggle fulscreen mode
+nmap -builtin <Leader>F :set fullscreen!<CR>
+
+"Toggle download list
+nmap -builtin <Leader>d :downloads<CR>
+
+"Open about:config in a new tab
+nmap -builtin <Leader>c :tabopen about:config<CR>
+
+"Rehash dactylrc
+nmap -builtin <Leader>R :rehash<CR>
+
+"Toggle menu bar
+nmap -builtin <Leader>m :set guioptions!=m<CR>
+
+"Toggle bookmarks bar
+nmap -builtin <Leader>b :set guioptions!=B<CR>
+
+"View tab groups
+nmap -builtin <Leader>e <S-C-e>
+
+"Open source in separate tab
+nmap -builtin gf :tab viewsource<CR>
+
+"Toggle buftabs
+nmap <leader>l :buftabs<CR>
+
+"Remap insert mode keys
+inoremap <C-c> <C-v><C-c>
+inoremap <C-v> <C-v><C-v>
+inoremap <C-x> <C-v><C-x>
+inoremap <C-a> <C-v><C-a>
+
+"Swap zoom keys
+nmap -builtin zi ZI
+nmap -builtin zm ZM
+nmap -builtin zo ZO
+nmap -builtin zr ZR
+nmap -builtin zz zZ
+nmap -builtin ZI zi
+nmap -builtin ZM zm
+nmap -builtin ZO zo
+nmap -builtin ZR zr
+nmap -builtin zZ zz
+
+set hintkeys=asdfg;lkjh
+set visualbell
+set showtabline=never
+set guioptions=bCsM
+set buftabs-elem=tbin
+colorscheme solarized
+
+" vim: set ft=pentadactyl:

@@ -1,0 +1,3 @@
+[submodule "plugins/buftabs"]
+	path = plugins/buftabs
+	url = https://github.com/grassofhust/buftabs.git
