@@ -37,6 +37,9 @@ nmap -builtin <Leader>R :rehash<CR>
 "Toggle menu bar
 nmap -builtin <Leader>m :set guioptions!=m<CR>
 
+"Toggle toolbar
+nmap -builtin <Leader>u :set guioptions!=T<CR>
+
 "Toggle bookmarks bar
 nmap -builtin <Leader>b :set guioptions!=B<CR>
 
@@ -72,6 +75,7 @@ set visualbell
 set showtabline=never
 set guioptions=bCsM
 set buftabs-elem=tbin
+set showstatuslinks=command
 colorscheme solarized
 
 " vim: set ft=pentadactyl:
