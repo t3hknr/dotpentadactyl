@@ -53,10 +53,10 @@ nmap -builtin gf :tab viewsource<CR>
 nmap <leader>l :buftabs<CR>
 
 "Remap insert mode keys
-inoremap <C-c> <C-v><C-c>
-inoremap <C-v> <C-v><C-v>
-inoremap <C-x> <C-v><C-x>
-inoremap <C-a> <C-v><C-a>
+imap -builtin <C-c> <C-v><C-c>
+imap -builtin <C-v> <C-v><C-v>
+imap -builtin <C-x> <C-v><C-x>
+imap -builtin <C-a> <C-v><C-a>
 
 "Swap zoom keys
 nmap -builtin zi ZI
