@@ -7,11 +7,6 @@ group user
 nmap -builtin y Y
 nmap -builtin Y y
 
-"nmap -builtin h H
-"nmap -builtin H h
-"nmap -builtin l L
-"nmap -builtin L l
-
 "Faster scroll
 map -count -modes=n j -builtin <count>4j
 map -count -modes=n k -builtin <count>4k
@@ -35,22 +30,19 @@ nmap -builtin <Leader>c :tabopen about:config<CR>
 nmap -builtin <Leader>R :rehash<CR>
 
 "Toggle menu bar
-nmap -builtin <Leader>m :set guioptions!=m<CR>
+nmap -builtin <Leader>m :toolbartoggle Menu Bar<CR>
 
 "Toggle toolbar
-nmap -builtin <Leader>u :set guioptions!=T<CR>
+nmap -builtin <Leader>u :toolbartoggle Navigation Toolbar<CR>
 
 "Toggle bookmarks bar
-nmap -builtin <Leader>b :set guioptions!=B<CR>
+nmap -builtin <Leader>b :toolbartoggle Bookmarks Toolbar<CR>
 
 "View tab groups
 nmap -builtin <Leader>e <S-C-e>
 
 "Open source in separate tab
 nmap -builtin gf :tab viewsource<CR>
-
-"Toggle buftabs
-nmap <leader>l :buftabs<CR>
 
 "Remap insert mode keys
 imap -builtin <C-c> <C-v><C-c>
@@ -72,10 +64,10 @@ nmap -builtin zZ zz
 
 set hintkeys=asdfg;lkjh
 set visualbell
-set showtabline=never
-set guioptions=bCsM
-set buftabs-elem=tbin
-set showstatuslinks=command
+set showtabline=always
+set guioptions=bCs
+set showstatuslinks=status
+set nextpattern='^Next [>»]','^Next »','\bnext\b',^>$,'^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
 colorscheme solarized
 
 " vim: set ft=pentadactyl:
