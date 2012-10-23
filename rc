@@ -70,4 +70,7 @@ set showstatuslinks=status
 set nextpattern='^Next [>»]','^Next »','\bnext\b',^>$,'^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
 colorscheme solarized
 
+command proxyoff :set! network.proxy.type=5
+command proxyon :set! network.proxy.type=1
+
 " vim: set ft=pentadactyl:
