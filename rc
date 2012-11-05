@@ -11,9 +11,6 @@ nmap -builtin Y y
 map -count -modes=n j -builtin <count>4j
 map -count -modes=n k -builtin <count>4k
 
-"Open gui addons window
-nmap -builtin <Leader>a :dialog addons<CR>
-
 "Toggle private mode
 nmap -builtin <Leader>p :set private!<CR>
 
@@ -22,9 +19,6 @@ nmap -builtin <Leader>F :set fullscreen!<CR>
 
 "Toggle download list
 nmap -builtin <Leader>d :downloads<CR>
-
-"Open about:config in a new tab
-nmap -builtin <Leader>c :tabopen about:config<CR>
 
 "Rehash dactylrc
 nmap -builtin <Leader>R :rehash<CR>
