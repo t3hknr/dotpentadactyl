@@ -67,4 +67,7 @@ colorscheme solarized
 command proxyoff :set! network.proxy.type=5
 command proxyon :set! network.proxy.type=1
 
+au fullscreen on  set go-=s
+au fullscreen off set go+=s
+
 " vim: set ft=pentadactyl:
