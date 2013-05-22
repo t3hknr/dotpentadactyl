@@ -2,6 +2,7 @@
 
 loadplugins '\.(js|penta)$'
 group user
+set! extensions.hidtb.auto_hide=true
 
 "Invert yank
 nmap -builtin y Y
@@ -12,13 +13,14 @@ map -count -modes=n j -builtin <count>4j
 map -count -modes=n k -builtin <count>4k
 
 "Toggle private mode
-nmap -builtin <Leader>p :set private!<CR>
+nmap -builtin <Leader>p :private winopen<CR>
 
 "Toggle fulscreen mode
 nmap -builtin <Leader>F :set fullscreen!<CR>
 
 "Toggle download list
 nmap -builtin <Leader>d :downloads<CR>
+nmap -builtin <Leader>D :dialog downloads<CR>
 
 "Rehash dactylrc
 nmap -builtin <Leader>R :rehash<CR>
@@ -31,6 +33,9 @@ nmap -builtin <Leader>u :toolbartoggle Navigation Toolbar<CR>
 
 "Toggle bookmarks bar
 nmap -builtin <Leader>b :toolbartoggle Bookmarks Toolbar<CR>
+
+nmap -silent -builtin <Leader>T :js hidtb.tbToggle()<CR>:set! extensions.hidtb.auto_hide!=true,false<CR>
+nmap -ex -silent -builtin <Leader>t js hidtb.tbToggle()
 
 "View tab groups
 nmap -builtin <Leader>e <S-C-e>
@@ -62,6 +67,7 @@ set showtabline=always
 set guioptions=bCs
 set showstatuslinks=status
 set nextpattern='^Next [>»]','^Next »','\bnext\b',^>$,'^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
+set yankshort=youtube.com,bugzilla.mozilla.org
 colorscheme solarized
 
 command proxyoff :set! network.proxy.type=5
