@@ -34,8 +34,7 @@ nmap -builtin <Leader>u :toolbartoggle Navigation Toolbar<CR>
 "Toggle bookmarks bar
 nmap -builtin <Leader>b :toolbartoggle Bookmarks Toolbar<CR>
 
-nmap -silent -builtin <Leader>T :js hidtb.tbToggle()<CR>:set! extensions.hidtb.auto_hide!=true,false<CR>
-nmap -ex -silent -builtin <Leader>t js hidtb.tbToggle()
+nmap -silent -builtin <Leader>t :set showtabline!=never,always<CR>
 
 "View tab groups
 nmap -builtin <Leader>e <S-C-e>
@@ -63,7 +62,7 @@ nmap -builtin zZ zz
 
 set hintkeys=asdfg;lkjh
 set visualbell
-set showtabline=always
+set showtabline=never
 set guioptions=bCs
 set showstatuslinks=status
 set nextpattern='^Next [>»]','^Next »','\bnext\b',^>$,'^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
