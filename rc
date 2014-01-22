@@ -2,7 +2,6 @@
 
 loadplugins '\.(js|penta)$'
 group user
-set! extensions.hidtb.auto_hide=true
 
 "Invert yank
 nmap -builtin y Y
