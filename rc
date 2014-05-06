@@ -28,7 +28,7 @@ nmap -builtin <Leader>R :rehash<CR>
 nmap -builtin <Leader>m :toolbartoggle Menu Bar<CR>
 
 "Toggle toolbar
-nmap -builtin <Leader>u :toolbartoggle Navigation Toolbar<CR>
+nmap -silent -builtin <Leader>u :set guioptions!=T<CR>
 
 "Toggle bookmarks bar
 nmap -builtin <Leader>b :toolbartoggle Bookmarks Toolbar<CR>
