@@ -68,9 +68,11 @@ set nextpattern='^Next [>»]','^Next »','\bnext\b',^>$,'^(>>|»)$','^(>|»)','(
 set yankshort=youtube.com,bugzilla.mozilla.org
 colorscheme solarized
 
-command proxyoff :set! network.proxy.type=5
+command proxyoff :set! network.proxy.type=0
 command proxyon :set! network.proxy.type=1
-command autoproxy :set! network.proxy.type=2
+command proxyauto :set! network.proxy.type=2
+command proxyautodetect :set! network.proxy.type=4
+command proxysystem :set! network.proxy.type=5
 
 au fullscreen on  set go-=s
 au fullscreen off set go+=s
